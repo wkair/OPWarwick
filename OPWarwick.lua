@@ -1,6 +1,9 @@
 myHero = GetMyHero()
 if myHero.charName ~= "Warwick" then return end
 
+require 'SourceLib'
+require 'SxOrbWalk'
+
 local autoUpdate   = true
 local silentUpdate = false
 
@@ -11,9 +14,6 @@ local scriptName = "OPWarwick"
 if autoUpdate then
     SourceUpdater(scriptName, version, "raw.github.com", "/wkair/OPWarwick/master/" .. scriptName .. ".lua", SCRIPT_PATH .. GetCurrentEnv().FILE_NAME, "/wkair/OPWarwick/master/version.txt"):SetSilent(silentUpdate):CheckUpdate()
 end
-
-require 'SourceLib'
-require 'SxOrbWalk'
 
 local loadingdone = false
 local Config = nil
