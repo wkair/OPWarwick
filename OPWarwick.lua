@@ -80,9 +80,6 @@ function Menu()
 
   Config:addSubMenu("When use R", "roption")
     Config.roption:addParam("enable"    , "Auto Combo Enable", SCRIPT_PARAM_ONOFF, true)
-    Config.roption:addParam("smite"     , "Use - Sabre Smite", SCRIPT_PARAM_ONOFF, true)
-    Config.roption:addParam("ignite"    , "Use - Ignite", SCRIPT_PARAM_ONOFF, true)
-    Config.roption:addParam("items"     , "Use - Items", SCRIPT_PARAM_ONOFF, true)
 
   Config:addSubMenu("Combo", "combo")
     Config.combo:addParam("key"   , "set key", SCRIPT_PARAM_ONKEYDOWN, false, 32)
